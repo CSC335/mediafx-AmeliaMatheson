@@ -33,8 +33,9 @@ public class PlayAnMP3 extends Application {
     //String path = "songfiles/SwingCheese.mp3";
     //String path = "songfiles/Capture.mp3";
     String path = "songfiles/DanseMacabreViolinHook.mp3";
-    pane.setCenter( new Label(path));
     playASong(path);
+    // And swapped two lines
+    pane.setCenter( new Label(path));
     // Put the pane in a sized Scene and show the GUI
     Scene scene = new Scene(pane, 255, 85); // 255 pixels wide, 85 pixels tall
     stage.setScene(scene);
